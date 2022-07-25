@@ -20,6 +20,8 @@ body {
   padding: 0;
   background-image: linear-gradient(to right, rgb(136, 39, 115), rgb(34, 27, 131));
   overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -35,6 +37,18 @@ body {
   width: 400px;
 
 
+}
+
+h1{
+  background: -webkit-linear-gradient( right, 
+    rgb(255, 61, 206), 
+    rgb(49, 46, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  line-height: 1.1;
+  
 }
 
 .shade {
@@ -64,12 +78,26 @@ body {
 }
 
 .inputs {
-  padding: 1em;
-  border-radius: 15px;
+  border-radius: 10px;
   display: inline block;
   position: relative;
   margin-top: 1em;
   width: 300px;
+  
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  -webkit-appearance: none;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 16px 12px 0 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+#user{
+  height: 26px;
+  text-align: left;
+  padding-bottom: 15px;
 }
 
 #mensagem {
@@ -132,6 +160,8 @@ form {
 .a4 {
   animation-delay: 2.3s;
 }
+
+
 
 @keyframes move {
   0% {
