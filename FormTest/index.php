@@ -58,6 +58,7 @@ function CleanPost($value)
 <script src="refreshing.js"></script>
 
 <body>
+  <main>
   <div id="allbacks">
     <div id="mainpage" class="shade">
       <header class="animation a1">
@@ -88,15 +89,15 @@ function CleanPost($value)
       </div>
       <div id="foot">
         <hr>
-        <footer>
-          <p id="credits"></p>
-        </footer>
+          <p id="validated">
+          </p>
       </div>
     </div>
-
-
   </div>
-
+  </main>
+<footer>
+<a id = "credits" href="https://github.com/sakikout?tab=repositories" target ="_blank" >sakikout</a>
+</footer>
 </body>
 
 <script>
