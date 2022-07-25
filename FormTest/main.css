@@ -26,7 +26,7 @@ body {
 
 
 #mainpage {
-  background-color: rgba(252, 250, 255, 0.89);
+  background-color: rgba(255, 255, 255, 0.973);
   border-radius: 10px;
   box-shadow: 25px 25px 25px rgba(47, 16, 65, 0.842);
   margin: 0 auto;
@@ -84,13 +84,14 @@ h1{
   margin-top: 1em;
   width: 300px;
   
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.096);
   -webkit-appearance: none;
   border: 0;
   font-family: 'Roboto', sans-serif;
   padding: 16px 12px 0 12px;
   font-size: 16px;
   font-weight: 400;
+  background-color: rgba(243, 243, 243, 0.973);
 }
 
 
@@ -118,6 +119,9 @@ hr {
 
 #sub:hover {
   background-image: linear-gradient(to right, rgb(197, 55, 166), rgb(46, 36, 177));
+}
+.inputs:hover{
+  box-shadow:0 0 15px 4px rgba(255, 58, 206, 0.342);
 }
 
 .error {
@@ -161,7 +165,22 @@ form {
   animation-delay: 2.3s;
 }
 
+footer{
+  display: grid;
+  position: relative;
+  top: 45%;
+  right: 15%;
+  text-align: center;
 
+  animation-name: move;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-delay: 2.4s;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+}
 
 @keyframes move {
   0% {
