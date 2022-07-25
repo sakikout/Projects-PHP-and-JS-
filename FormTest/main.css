@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@100;300&display=swap');
+
+* {
+  display: inline block;
+  position: relative;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(136, 39, 115), rgb(34, 27, 131));
+  overflow: hidden;
+}
+
+
+#mainpage {
+  background-color: rgba(252, 250, 255, 0.89);
+  border-radius: 10px;
+  box-shadow: 25px 25px 25px rgba(47, 16, 65, 0.842);
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  height: 600px;
+  width: 400px;
+
+
+}
+
+.shade {
+  animation-name: shade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+#formulario {
+  padding: 30px;
+}
+
+
+#sub {
+  background-image: linear-gradient(to right, rgb(136, 39, 115), rgb(34, 27, 131));
+  display: inline block;
+  position: relative;
+  border: 0px solid grey;
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 1em;
+  color: white;
+
+  width: 150px;
+}
+
+.inputs {
+  padding: 1em;
+  border-radius: 15px;
+  display: inline block;
+  position: relative;
+  margin-top: 1em;
+  width: 300px;
+}
+
+#mensagem {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  align-items: left;
+  right: 6em;
+  font-size: 1.1em;
+}
+
+hr {
+  width: 60%;
+}
+
+#sub:hover {
+  background-image: linear-gradient(to right, rgb(197, 55, 166), rgb(46, 36, 177));
+}
+
+.error {
+  color: red;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.m_validation {
+  display: inline-block;
+  position: relative;
+  margin: 0px auto;
+  margin-top: 7em;
+  padding: 1em;
+}
+
+form {
+  text-align: center;
+}
+
+.animation {
+  animation-name: move;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.a1 {
+  animation-delay: 2s;
+}
+
+.a2 {
+  animation-delay: 2.1s;
+}
+
+.a3 {
+  animation-delay: 2.2s;
+}
+
+.a4 {
+  animation-delay: 2.3s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes shade {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 440px;
+  }
+}
