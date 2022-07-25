@@ -61,23 +61,23 @@ function CleanPost($value)
   <div id="allbacks">
     <div id="mainpage" class="shade">
       <header class="animation a1">
-        <h1>Say Hello Stranger!</h1>
+        <span class ="sayhello"><h1>Say Hello Stranger!</h1></span>
         <hr>
       </header>
       <div id="formulario">
         <form id="form1" method="post">
 
           <!-- <label id=" luser" for="user" class="labels">Name:</label> -->
-          <input id="user" type="text" <?php if (isset($_POST['users'])) {
+          <span class ="glitter"><input id="user" type="text" <?php if (isset($_POST['users'])) {
                                           echo "value='" . $_POST['users'] . "'";
-                                        } ?> name="users" class="inputs animation a2" placeholder="Your name">
+                                        } ?> name="users" class="inputs animation a2" placeholder="Your name"></span>
           <br><span class="error animation a2"><?php echo $errorName; ?></span>
           <br>
           <div id="mensagem">
             <!-- <label id="message" for="body" class="labels">Message:</label> -->
-            <textarea id="body" name="bodys" <?php if (isset($_POST['bodys'])) {
+            <span class ="glitter"><textarea id="body" name="bodys" <?php if (isset($_POST['bodys'])) {
                                                 echo "value='" . $_POST['bodys'] . "'";
-                                              } ?> class="inputs animation a3" rows="5" cols="22" placeholder="Say something cool"></textarea>
+                                              } ?> class="inputs animation a3" rows="5" cols="22" placeholder="Say something cool"></textarea></span>
             <br><span class="error animation a3"><?php echo $errorMessage; ?></span><br>
           </div>
           <input id="sub" type="submit" value="Submit" class="animation a4"><br>
